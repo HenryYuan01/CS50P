@@ -30,6 +30,7 @@ def is_valid(s):
             # Otherwise valid for now, break 
             else: 
                 break 
+    
     # Knowing that a number has been encountered, and it doesn't begin with 0 
     for c in s: 
         # Check for first digit encounter 
