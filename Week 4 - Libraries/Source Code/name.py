@@ -14,13 +14,12 @@ except IndexError:
 if len(sys.argv) < 2: 
     # print("Too few arguments") 
     sys.exit("Too few arguments") 
+''' 
 elif len(sys.argv) > 2: 
     # print("Too many arguments") 
     sys.exit("Too many arguments") 
 # else conditional can be removed 
-''' 
-else: 
-    print("hello, my name is", sys.argv[1])
 '''
-
-print("hello, my name is", sys.argv[1])
+# allow multiple names, using slices 
+for arg in sys.argv[1:]: 
+    print("hello, my name is", arg) 
