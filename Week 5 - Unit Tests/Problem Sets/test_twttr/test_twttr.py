@@ -1,10 +1,5 @@
 from twttr import shorten
 import pytest 
-
-def main():
-    test_none() 
-    test_some() 
-    test_all() 
     
 # no vowels 
 def test_none(): 
