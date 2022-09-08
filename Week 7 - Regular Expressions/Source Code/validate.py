@@ -1,7 +1,7 @@
 import re 
 
 # strip trims whitespace left or right of string 
-email = input("What's your email? ").strip()
+email = input("What's your email? ").strip() 
 
 ''' 
 # split splits one string into parts based on parameter 
@@ -21,7 +21,7 @@ else:
 # "[^@]" means can put anything here besides "@"
 # "[a-zA-Z0-9._]" means everything in this range 
 # "\w" means word characters 
-if re.search(r"^\w+@\w+\.edu$", email): 
+if re.search(r"^\w+@\w+\.edu$", email, re.IGNORECASE): 
     print("Valid") 
 else: 
     print("Invalid")
