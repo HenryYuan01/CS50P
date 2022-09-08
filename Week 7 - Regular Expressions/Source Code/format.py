@@ -10,7 +10,7 @@ if "," in name:
 print(f"hello, {name}") 
 '''
 
-matches = re.search(r"^(.+), (.+)$", name)
+matches = re.search(r"^(.+), *(.+)$", name)
 if matches: 
     # last, first = matches.groups() 
     # name = f"{first} {last}" 
