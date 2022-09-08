@@ -10,8 +10,8 @@ if "," in name:
 print(f"hello, {name}") 
 '''
 
-matches = re.search(r"^(.+), *(.+)$", name)
-if matches: 
+# this line can be combined, must use := (walrus operator)
+if matches := re.search(r"^(.+), *(.+)$", name): 
     # last, first = matches.groups() 
     # name = f"{first} {last}" 
     name = matches.group(2) + " " + matches.group(1) 
