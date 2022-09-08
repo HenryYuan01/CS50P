@@ -16,7 +16,12 @@ else:
 '''
 
 # "r" means raw, "\" as escape to indicate ".edu"
-if re.search(r".+@.+\.edu", email): 
+# ".+" means some characters before "@" 
+# "^/$" means must start/end with that 
+# "[^@]" means can put anything here besides "@"
+# "[a-zA-Z0-9._]" means everything in this range 
+# "\w" means word characters 
+if re.search(r"^\w+@\w+\.edu$", email): 
     print("Valid") 
 else: 
     print("Invalid")
